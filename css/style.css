@@ -6,11 +6,14 @@ a{
     color: var(--branco);
 }
 
-.layout{
-    padding: 0 352px;
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-/* HEADER */
+/* ======== HEADER ======== */
 
 header nav{
     display: flex;
@@ -20,6 +23,7 @@ header nav{
 }
 
 header nav .nav{
+    max-width: 1200px;
     display: flex;
     gap: 6.56rem;
 }
@@ -43,13 +47,21 @@ nav .botao button{
 }
 
 
-/* MAIN */
+/* ======== MAIN ======== */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SESSÃO BANNER */
 
 main .main-banner{
     display: flex;
-    justify-content: center;
-    gap: 96px;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 main .main-banner .banner-esquerda{
     display: flex;
@@ -67,10 +79,12 @@ main .main-banner .banner-esquerda .banner-txt h2{
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 4.625rem;
+    max-width: 592px;;
 }
 main .main-banner .banner-esquerda .banner-txt p{
     color: var(--branco);
     font-family: "Inter";
+    max-width: 488px;;
 }
 main .main-banner .banner-esquerda button{
     color: var(--branco);
@@ -84,9 +98,29 @@ main .main-banner .banner-esquerda button{
     background: var(--laranja);
     border: none;
 }
+
+
+/* SESSÃO PESQUISA */
+
+main .main-pesquisa-background{
+    background: var(--cinza-escuro);
+}
+main .main-pesquisa{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 86px 0;
+}
+main .main-pesquisa h3{
+    color: var(--branco);
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 500;
+}
 main .main-pesquisa .barras-pesquisa{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 main .main-pesquisa .barras-pesquisa .pesquisa{
     background: var(--cinza-medio);
@@ -135,4 +169,87 @@ main .main-pesquisa .barras-pesquisa .filtro form select{
     font-weight: 400;
     outline: none;
     border: none;
+}
+
+main .main-pesquisa .barras-pesquisa .filtro form select option{
+    background: var(--cinza-medio);
+    border-radius: 5px;
+    width: 30.5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 28px;
+}
+
+
+/* SESSÃO CARDÁPIO */
+
+main .cardapio{
+    padding: 64px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+    /* grid-auto-rows: ; */
+}
+main .cardapio .hamburguer{
+    width: clamp(344px, 90%, 384px);
+    height: clamp(351px, 90%, 416px);
+    border-radius: 8px;
+}
+main .cardapio .hamburguer .hamburguer-img{
+    background: var(--cinza-medio);
+    border-radius: 8px 8px 0px 0px;
+    padding: 0 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+main .cardapio .hamburguer .hamburguer-img img{
+    position: relative;
+    top: 40px;
+}
+main .cardapio .hamburguer .hamburguer-img .promocao{
+    border-radius: 4px;
+    background: var(--laranja);
+    padding: 13px 20px;
+    color: var(--branco);
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+main .cardapio .hamburguer .hamburguer-txt{
+    background: var(--cinza-escuro);
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 66px 40px 40px;
+}
+main .cardapio .hamburguer .hamburguer-txt p{
+    color: var(--branco);
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+main .cardapio .hamburguer .hamburguer-txt h4{
+    color: var(--branco);
+    font-family: "Calistoga";
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+main .cardapio .hamburguer .hamburguer-txt h5 .valor{
+    color: var(--laranja);
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
 }
