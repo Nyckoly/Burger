@@ -9,8 +9,9 @@ a{
 .container{
     width: 100%;
     margin: auto;
-    max-width: 1200px;
-    padding: 0 20px;
+    max-width: 1216px;
+    min-width: 393px;
+    /* padding: 0 20px; */
 }
 
 /* ======== HEADER ======== */
@@ -53,6 +54,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* SESSÃO BANNER */
@@ -62,6 +64,12 @@ main .main-banner{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+main .main-banner .banner-img{
+    /* width: clamp(290px, 100%, 518px); */
+}
+main .main-banner .banner-img img{
+    width: clamp(290px, 100%, 518px);
 }
 main .main-banner .banner-esquerda{
     display: flex;
@@ -85,6 +93,7 @@ main .main-banner .banner-esquerda .banner-txt p{
     color: var(--branco);
     font-family: "Inter";
     max-width: 488px;;
+    font-size: 20px;
 }
 main .main-banner .banner-esquerda button{
     color: var(--branco);
@@ -104,6 +113,7 @@ main .main-banner .banner-esquerda button{
 
 main .main-pesquisa-background{
     background: var(--cinza-escuro);
+    width: 100%;
 }
 main .main-pesquisa{
     display: flex;
@@ -191,12 +201,12 @@ main .cardapio{
     justify-content: center;
     align-items: center;
     gap: 32px;
-    grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(344px, 384px));
     /* grid-auto-rows: ; */
 }
 main .cardapio .hamburguer{
-    width: clamp(344px, 90%, 384px);
-    height: clamp(351px, 90%, 416px);
+    width: clamp(344px, 100%, 384px);
+    /* height: clamp(351px, 90%, 416px); */
     border-radius: 8px;
 }
 main .cardapio .hamburguer .hamburguer-img{
@@ -216,7 +226,6 @@ main .cardapio .hamburguer .hamburguer-img .promocao{
     background: var(--laranja);
     padding: 13px 20px;
     color: var(--branco);
-    color: #FFF;
     font-family: "Inter";
     font-size: 16px;
     font-weight: 600;
@@ -252,4 +261,21 @@ main .cardapio .hamburguer .hamburguer-txt h5 .valor{
     font-family: "Inter";
     font-size: 32px;
     font-weight: 700;
+}
+
+/* FOOTER */
+
+footer{
+    background: var(--cinza-escuro);
+    height: 239px;
+}
+
+footer img{
+    position: relative;
+    top:120px;
+    left: 200px;;
+}
+
+@media screen and (max-width: 812px){
+    
 }
