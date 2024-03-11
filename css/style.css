@@ -10,7 +10,6 @@ a{
     width: 100%;
     margin: auto;
     max-width: 1216px;
-    min-width: 393px;
     /* padding: 0 20px; */
 }
 
@@ -27,6 +26,11 @@ header nav .nav{
     max-width: 1200px;
     display: flex;
     gap: 6.56rem;
+}
+header nav .menu{
+    color: white;
+    font-size: 32px;
+    display: none;
 }
 nav .nav .nav-lista{
     display: flex;
@@ -273,9 +277,28 @@ footer{
 footer img{
     position: relative;
     top:120px;
-    left: 200px;;
+    left: 10.5%;
 }
 
 @media screen and (max-width: 812px){
-    
+    .nav-lista li a, .botao{
+        display: none;
+    }
+    header nav .menu{
+        display: block;
+    }
+    header nav .nav{
+        display: block;
+    }
+
+    /* SESSÃO BANNER */
+
+    main .main-banner .banner-esquerda .banner-txt h2{
+    text-align: center;
+    font-size: 44px;
+    line-height: 50.359px;
+    }
+    main .main-banner .banner-esquerda .banner-txt p{
+    text-align: center;
+    }
 }

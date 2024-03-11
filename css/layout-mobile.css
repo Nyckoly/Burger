@@ -1,0 +1,38 @@
+.container{
+    max-width: 344px;
+}
+/* SESSÃO BANNER */
+
+main .main-banner .banner-esquerda .banner-txt h2 {
+    text-align: center;
+    font-size: 44px;
+    line-height: 50.359px;
+}
+
+main .main-banner .banner-esquerda .banner-txt p {
+    text-align: center;
+}
+
+main .main-banner .banner-esquerda {
+    align-items: center;
+}
+
+/* SESSÃO PESQUISA */
+main .main-pesquisa {
+    justify-content: center;
+}
+main .main-pesquisa h3{
+    font-size: 30px;
+    text-align: center;
+}
+main .main-pesquisa .barras-pesquisa{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+main .main-pesquisa .barras-pesquisa .pesquisa, main .main-pesquisa .barras-pesquisa .filtro form{
+    width: 344px;
+    padding: 0;
+    /* width: 100%; */
+}
