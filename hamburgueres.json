@@ -1,0 +1,34 @@
+[
+    {
+        "tipo": "Tradicional",
+        "nome": "Texas Burger",
+        "valor": "R$ 25,50",
+        "imagem": "texas",
+        "promocao": "Promoção",
+        "css": "promocao"
+    },
+    {
+        "tipo": "Artesanal",
+        "nome": "Montana Burger",
+        "valor": "R$ 45,50",
+        "imagem": "montana",
+        "promocao": "",
+        "css": ""
+    },
+    {
+        "tipo": "Artesanal",
+        "nome": "Georgia Burger",
+        "valor": "R$ 35,50",
+        "imagem": "georgia",
+        "promocao": "",
+        "css": ""
+    },
+    {
+        "tipo": "Artesanal",
+        "nome": "Kansas Burger",
+        "valor": "R$ 40,00",
+        "imagem": "kansas",
+        "promocao": "",
+        "css": ""
+    }
+]
